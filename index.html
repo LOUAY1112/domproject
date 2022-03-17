@@ -1,0 +1,121 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tableau</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/17b3712fca.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <main class="container">
+        <div class="row">
+
+
+
+
+            <div class="col-4 mt-3">
+                <div class="img-style">
+
+
+                    <img class="mx-auto img-fluid pb-1" src="image/images (2).jpg" height="250" width="250" alt="">
+                    <br>
+                    <span> p1 30DT</span>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="col-4 mt-4 ">
+                <div class="img-style">
+                    <img class="mx-auto img-fluid" src="image/téléchargement.jpg" width="250" alt="">
+                </div>
+            </div>
+            <div class="col-4 mt-4">
+                <div class="img-style">
+
+                    <img class="mx-auto img-fluid" src="image/images (1).jpg" width="250">
+                </div>
+            </div>
+
+
+
+        </div>>
+
+        </div>
+
+    </main>
+
+
+    <table id="tableau-style">
+        <thead>
+
+            <tr>
+
+
+                <th> produit</th>
+                <th> image</th>
+                <th> prix</th>
+                <th> qantité</th>
+                <th> totale</th>
+
+
+            </tr>
+        </thead>
+        <Tbody>
+            <tr>
+                <td> p1 </td>
+                <td> <img width="100" src="image/image1.jpg" alt=""> </td>
+                <td> 30DT</td>
+                <td><i class="fa-solid fa-plus" onclick="plus()"></i>
+
+                    <span id="quantity">0</span>
+
+                    <i class="fa-solid fa-minus" onclick="minus"></i>
+
+                </td>
+                <td>
+                    30DT
+                </td>
+            </tr>
+            <tr>
+
+                <td colspan="5"> contenu </td>
+                <td>totale</td>
+            </tr>
+            <tr>
+
+
+
+
+        </Tbody>
+
+
+    </table>
+    <script type="text/javascript" src="main.js">     </script>
+
+</body>
+
+</html> -->
+<form name="loginForm" onsubmit=" validateForm(event) ">
+    <label for="Name">Name:</label>
+    <input type="text" name="name" placeholder="example@example.com" />
+    <label for="password">Password:</label>
+    <input type="password" name="password" placeholder="*********" />
+    <button type="submit">Login</button>
+    <button type="reset">cancel</button>
+</form>
+
+<script> function validateForm(e) {
+        e.preventDefault()
+        var name = document.loginForm.name.value
+        var password = document.loginForm.password.value
+        if (name.length == 0)
+            return alert(`name is required`)
+        if (password.length < 5)
+            return alert(`password length should more than 5`)
+    }         </script>
